@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+:root{
+    --clr-mod-violet: hsl(263, 55%, 52%);
+    --clr-vd-grayish-blue: hsl(217, 19%, 35%);
+    --clr-vd-blackish-blue: hsl(219, 29%, 14%);
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-l-gray: hsl(0, 0%, 81%);
+    --clr-l-grayish-blue: hsl(210, 46%, 95%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    background: var(--clr-l-grayish-blue);
+}
+
+.container{
+    padding: 3% 5%;
+    display: grid;
+    grid-template-columns: repeat(22, 51px);
+    grid-auto-rows: 50px;
+    gap: 5px;
+}
+.profile{
+    display: flex;
+}
+.profile img{
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.profile-name span{
+    opacity: 50%;
+}
+.grid{
+    border-radius: 10px;
+    margin: 15px;
+    padding: 20px;
+}
+.grid span{
+    font-size: 13px;
+    opacity: 70%;
+}
+.grid p{
+    margin: 15px 0 15px;
+    font-weight: 600;
+}
+.grid:nth-child(1){
+    grid-column: 1/12;
+    grid-row: 1/6;
+    color: var(--clr-l-grayish-blue);
+    background: url(../images/bg-pattern-quotation.svg) no-repeat 370px 0px var(--clr-mod-violet);
+}
+.grid:nth-child(1) img{
+    border: 2px solid hsl(263, 66%, 64%);
+}
+.grid:nth-child(2){
+    grid-column: 12/17;
+    grid-row: 1/6;
+    color: var(--clr-l-grayish-blue);
+    background: var(--clr-vd-grayish-blue);
+}
+.grid:nth-child(3){
+    grid-column: 1/7;
+    grid-row: 6/11;
+    background: var(--clr-white);
+}
+.grid:nth-child(4){
+    grid-column: 7/17;
+    grid-row: 6/11;
+    color: var(--clr-l-grayish-blue);
+    background: var(--clr-vd-blackish-blue);
+}
+.grid:nth-child(4) img{
+    border: 2px solid hsl(263, 66%, 64%);
+}
+.grid:nth-child(5){
+    grid-column: 17/23;
+    grid-row: 1/11;
+    background: var(--clr-white);
+}
+
+@media (max-width: 600px) {
+    .container{
+        padding-top: 5%;
+        padding-bottom: 5%;
+        margin: 0 auto;
+    }
+    .grid:nth-child(1){
+        grid-column: 1/7;
+        grid-row: 1/9;
+        background: url(../images/bg-pattern-quotation.svg) no-repeat 120px 0px var(--clr-mod-violet);
+    }
+    .grid:nth-child(2){
+        grid-column: 1/7;
+        grid-row: 9/14;
+    }
+    .grid:nth-child(3){
+        grid-column: 1/7;
+        grid-row: 14/19;
+    }
+    .grid:nth-child(4){
+        grid-column: 1/7;
+        grid-row: 19/26;
+    }
+    .grid:nth-child(5){
+        grid-column: 1/7;
+        grid-row: 26/35;
+    }
+}
