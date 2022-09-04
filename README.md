@@ -15,7 +15,7 @@ Thanks for checking out this front-end coding challenge.
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://rubylenshy.github.io/testimonials-grid-section/)
+- Live Site URL: [Testimonial Grid](https://rubylenshy.github.io/testimonials-grid-section/)
 
 
 ## Author
